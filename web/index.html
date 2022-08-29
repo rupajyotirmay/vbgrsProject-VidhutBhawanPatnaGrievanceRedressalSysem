@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ElectricityBillingSystem</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <style>
+body {  background-color:lightblue;}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: gray;
+   color: white;
+   text-align: center;
+   font-size: 16px;
+}
+.li{
+    font-size: 21px;
+}
+
+</style>
+</head>
+<body>
+    
+<div class="container">
+	<nav  class="navbar navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+		<h2><a class="navbarbrand" href="#">Electricity Billing System</a></h2>
+		</div>
+	<ul class="nav navbar-nav">
+	<li class="active"><a href="index.html">About</a></li>
+	<li class="dropdown">
+	<a class="dropdown-toggle" data-toggle="dropdown" href="#">Bill<span class="caret"></span></a>
+		<ul class="dropdown-menu"> 
+		<li><a href="BillPay.html">Payment</a></li>
+		<li><a href="#">Receipt</a></li>
+		<li><a href="#">Bill View</a></li>
+		</ul>
+	</li>
+	<li><a href="feedback.html">Feedback</a></li>	<li><a href="contact.html">Contact</a></li>
+	</ul>
+	<ul class="nav navbar-nav navbar-right">  
+            <li><a class="dropdown-toggle" data-toggle="dropdown" href="admin.html">Login<span class="caret"></span></a>
+		<ul class="dropdown-menu"> 
+		<li><a href="admin.html">Admin</a></li>
+		<li><a href="admin.html">Employee</a></li>
+		</ul></li>
+
+         </ul>
+	</div>
+	</nav> 
+</div>
+<lable ></lable>
+ <div class="container">
+  <form class="form-inline" action="cviewprofile.jsp" method="post">
+    <div class="form-group">
+        <label>Consumer Login</label>
+      <input type="text" class="form-control" id="cid" placeholder="Enter Consumer Id" name="cid">
+    </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
+
+<div class="container">
+	<div id="demo" class="carousel slide" data-ride="carousel">
+		<!--Indicators -->
+		<ul class="carousel-indicators">
+		<li data-target="#demo" data-slide-to="0" class="active"></li>
+		<li data-target="#demo" data-slide-to="1"></li>
+		<li data-target="#demo" data-slide-to="2"></li>
+		<li data-target="#demo" data-slide-to="3"></li>
+		</ul>
+	<div class="carousel-inner">
+		<div class="item active"><img src="imgal/eletower.jpg"alt="0" ></div>
+		<div class="item"><img src="imgal/eleimg2.jpg" alt="1" ></div>
+		<div class="item"><img src="imgal/eleimg1.jpg" alt="2"></div>
+		<div class="item"><img src="imgal/eleimg3.jpg" alt="3"></div>
+	</div>
+	<a class="carousel-control-prev" href="#demo" data-slide="prev">
+	<span class="carousel-control-prev-icon"></span></a>
+	<a class="carousel-control-next" href="#demo" data-slide="next">
+	<span class="carousel-control-next-icon"></span></a>
+	</div>
+</div> <br>
+<div class="container"><h4>
+<p class="text-justify">
+"Electricity Billing System" has been developed to computerize the billing system where all dealing was done manually earlier. Now a day’s computerization is
+spreading with great speed. Many organizations are being computerized and are surely enjoying the benefits of computerization. Earlier one person was gone to collect the meter
+reading, then another one check the unit charge and another person calculate the total charge. These details are all stored in special records. Computerization helps to overcome
+all these problems, by integrating the system that is the above said jobs can be done by a single person. That is one computer user “Electricity Billing System” helps
+to create accurate bills, with great speed. This includes the consumer details report generation.
+</p></h4>
+</div>
+​
+
+<div class="footer">
+    <p>Designed & Developed by : Group no - 2  Session (2020-2022) Under Project Guide:<b> Asst.Professor Ms.Sushmita Chakraborty</b>
+            (Department of M.C.A., Patna Women's College, Patna)</p>
+</div>
+
+
+</body>
+</html>

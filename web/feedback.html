@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ElectricityBillingSystem</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <style>
+body {  background-color:lightblue;}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: gray;
+   color: white;
+   text-align: center;
+   font-size: 16px;
+}
+
+</style>
+</head>
+<body>
+    
+<div class="container">
+	<nav  class="navbar navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+		<h2><a class="navbarbrand"href="index.html">Electricity Billing System</a></h2>
+		</div>
+	<ul class="nav navbar-nav">
+	<li ><a href="index.html">About</a></li>
+	<li>
+	<a class="dropdown-toggle" data-toggle="dropdown"href="#">Bill<span class="caret"></span></a>
+		<ul class="dropdown-menu"> 
+		<li><a href="BillPay.html">Payment</a></li>
+		<li><a href="#">Receipt</a></li>
+		<li><a href="#">Bill View</a></li>
+		</ul>
+	</li>
+	<li  class="active"><a href="feedback.html">Feedback</a></li>
+	<li><a href="contact.html">Contact</a></li>
+	</ul>
+	<ul class="nav navbar-nav navbar-right">
+	<li><a href="index.html"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+	</ul>
+	</div>
+	</nav> 
+</div>
+
+<div class="container"><form action="./feedback" method="post">
+<div class="form-group">
+<input type="text" class="form-control" id="nm" name="nm" placeholder="Please Enter Your Name">
+</div>
+<div class="form-group">
+<input class="form-control" type="text" id="phn" name="phn" placeholder="Please Enter Your Phone no">
+</div>
+
+<div class="form-group">
+  	<input class="form-control"type="text" id="email" name="email"placeholder="Please Enter Your Email Id">
+</div>
+<div class="form-group">
+  	<input class="form-control" type="text" id="subject" name="subject" placeholder="Please Enter Your Subject for Feedback">
+</div>
+<div class="form-group">
+    <textarea class="form-control"type="text" row="10" id="message" name="message" placeholder="Please Enter Your Messsage"></textarea>
+</div>
+
+<button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
+
+    </body>
+</html>

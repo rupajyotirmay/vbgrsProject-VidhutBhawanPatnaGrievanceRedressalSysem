@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ElectricityBillingSystem</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <style>
+body {  background-color:lightblue;}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: gray;
+   color: white;
+   text-align: center;
+   font-size: 16px;
+}
+
+</style>
+</head>
+<body>
+    
+<div class="container">
+	<nav  class="navbar navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+		<h2><a class="navbarbrand"href="#">Electricity Billing System</a></h2>
+		</div>
+	<ul class="nav navbar-nav">
+	<li ><a href="#">About</a></li>
+	<li class="active">
+	<a class="dropdown-toggle" data-toggle="dropdown"href="#">Bill<span class="caret"></span></a>
+		<ul class="dropdown-menu"> 
+		<li><a href="BillPay.html">Payment</a></li>
+		<li><a href="#">Receipt</a></li>
+		<li><a href="#">Bill View</a></li>
+		</ul>
+	</li>
+	<li><a href="#">Feedback</a></li>
+	<li><a href="contact.html">Contact</a></li>
+	</ul>
+	<ul class="nav navbar-nav navbar-right">
+	<li><a href=""><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+	</ul>
+	</div>
+	</nav> 
+</div>
+
+<div class="container"><form action="./addemp" method="post">
+<div class="form-group">
+      <label for="Name">Employee Name:</label>
+      <input type="text" class="form-control" id="nm" name="nm" placeholder="Enter Employee Name">
+</div>
+<div class="form-group">
+      <label for="Employee phone no">Employee Phone no:</label>
+	<input class="form-control"type="text" id="phone" name="phone"placeholder="Enter Your Phone no">
+</div>
+
+<div class="form-group">
+<label for="customer type">Employee Type:</label>
+  <select class="form-control"name="type">
+    <option value="0">Select Employee Type:</option>
+    <option value="1">1G</option>
+    <option value="2">2G</option>    
+    <option value="1">3G</option>
+    <option value="2">4G</option>
+  </select>
+</div>
+
+<div class="form-group">
+      <label for="customer plot no">Employee Plot no:</label>
+  	<input class="form-control"type="text" id="plot no" name="plotno"placeholder="Enter Your  Plot no">
+</div>
+<div class="form-group">
+<label for="customer city">Employee City:</label>
+  	<input class="form-control"type="text" id="city" name="city"placeholder="Enter Your City">
+</div>
+<div class="form-group">
+  <label for="customer state">Employee State:</label>
+ 	 <select class="form-control" id="state" name="state"placeholder="Select Enter Your  State"> <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+            <option value="Assam">Assam</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Chandigarh">Chandigarh</option>
+            <option value="Chhattisgarh">Chhattisgarh</option>
+            <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+            <option value="Daman and Diu">Daman and Diu</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Lakshadweep">Lakshadweep</option>
+            <option value="Puducherry">Puducherry</option>
+            <option value="Goa">Goa</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Haryana">Haryana</option>
+            <option value="Himachal Pradesh">Himachal Pradesh</option>
+            <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+            <option value="Jharkhand">Jharkhand</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Madhya Pradesh">Madhya Pradesh</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Manipur">Manipur</option>
+            <option value="Meghalaya">Meghalaya</option>
+            <option value="Mizoram">Mizoram</option>
+            <option value="Nagaland">Nagaland</option>
+            <option value="Odisha">Odisha</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Sikkim">Sikkim</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Tripura">Tripura</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="Uttarakhand">Uttarakhand</option>
+            <option value="West Bengal">West Bengal</option>
+            </select>
+</div>
+
+<button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
+
+    </body>
+</html>
